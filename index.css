@@ -1,0 +1,101 @@
+@charset "UTF-8";
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+/* container coding start */
+#container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(127, 0, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(127, 0, 255, 0.14889705882352944) 0%,
+    rgba(225, 0, 255, 0.1516981792717087) 90%
+  );
+}
+/* container coding end */
+
+/* page coding start */
+#page {
+  width: 330px;
+  height: auto;
+  background-color: white;
+  border-radius: 20px;
+  padding: 50px 25px;
+  box-shadow: 0px 0px 10px #ccc, 0px 0px 10px #ccc;
+}
+/*page coding end */
+/* login coding start */
+#login h1,
+#signup h1 {
+  font-family: "ubuntu", sans-serif;
+  text-align: center;
+}
+#login {
+  display: none;
+}
+#login_form {
+  margin-top: 30px;
+}
+#signup_form {
+  margin-top: 15px;
+}
+
+#login_email,
+#login_password,
+#signup_username,
+#signup_email,
+#signup_password,
+#signup_phone {
+  font-family: "ubuntu", sans-serif;
+  padding: 10px;
+  border: none;
+  padding-left: 3px;
+  border-bottom: 1px solid #ccc;
+  margin-top: 20px;
+  font-size: 16px;
+  width: 100%;
+  color: grey;
+  outline: none;
+}
+#login_button,
+#signup_button {
+  font-size: 16px;
+
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  margin: 30px 0px 30px 0px;
+  background: rgb(127, 0, 255);
+  color: white;
+  /* background: linear-gradient(
+    262deg,
+    rgba(127, 0, 255, 1) 0%,
+    rgba(225, 0, 255, 1) 100%
+  ); */
+}
+#login p,
+#signup p {
+  text-align: center;
+  font-family: "ubuntu", sans-serif;
+  font-size: 16px;
+}
+#sign,
+#log {
+  color: blue;
+  cursor: pointer;
+}
+#signup_email_notice,
+#login_email_notice,
+#login_password_notice {
+  color: red;
+  font-family: "ubuntu", sans-serif;
+  display: none;
+}
+/* login coding end */

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login and Sign up Page</title>
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="page">
+        <div id="login" class="animate__animated animate__flipInY">
+          <h1>Login</h1>
+          <form id="login_form" autocomplete="off">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              required="required"
+              id="login_email"
+            />
+            <small id="login_email_notice">
+              <i
+                class="fa-solid fa-triangle-exclamation"
+                style="color: #ff0019"
+              ></i>
+              Email Id Is Not Registered.</small
+            >
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              id="login_password"
+              required="required"
+            />
+            <small id="login_password_notice">
+              <i
+                class="fa-solid fa-triangle-exclamation"
+                style="color: #ff0019"
+              ></i>
+              Password is either wrong or incorrect.</small
+            >
+            <button type="submit" id="login_button">Login</button>
+            <p>Don't Have An Account ?<span id="sign">Sign Up</span></p>
+          </form>
+        </div>
+        <div id="signup" class="animate__animated animate__flipInY">
+          <h1>Sign Up</h1>
+          <form id="signup_form" autocomplete="off">
+            <input
+              type="text"
+              name="name"
+              id="signup_username"
+              placeholder="Name"
+              required="required"
+            />
+            <input
+              type="email"
+              name="email"
+              id="signup_email"
+              placeholder="Email"
+              required="required"
+            />
+            <small id="signup_email_notice">
+              <i
+                class="fa-solid fa-triangle-exclamation"
+                style="color: #ff0019"
+              ></i>
+              Email Id Alread Exist.</small
+            >
+            <input
+              type="number"
+              name="number"
+              id="signup_phone"
+              placeholder="Phone no."
+              required="required"
+            />
+            <input
+              type="password"
+              name="password"
+              id="signup_password"
+              placeholder="Password"
+              required="required"
+            />
+            <button type="submit" id="signup_button">Sign Up</button>
+            <p>Already Have an Account ? <span id="log">Login</span></p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./java/index.js"></script>
+    <script src="./java/log&signup.js"></script>
+  </body>
+</html>
